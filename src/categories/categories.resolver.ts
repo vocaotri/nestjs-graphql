@@ -22,7 +22,7 @@ export class CategoriesResolver {
   // }
 
   @Query(() => [CategoryDTO])
-  async cats() {
+  async categories() {
     return this.categoriesService.findAll();
   }
 

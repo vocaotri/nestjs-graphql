@@ -8,7 +8,7 @@ type CategoryDTO {
 }
 
 type Query {
-  cats: [CategoryDTO!]!
+  categories: [CategoryDTO!]!
 }
 
 type Mutation {
