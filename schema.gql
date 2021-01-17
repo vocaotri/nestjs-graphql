@@ -1,0 +1,33 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type CategoryDTO {
+  title: String
+  description: String
+}
+
+type Query {
+  cats: [CategoryDTO!]!
+}
+
+type Mutation {
+  addCategory(newCategoryData: CategoryInput!): CategoryDTO!
+  updateCategory(updateCategoryData: CategoryUpdate!): CategoryDTO!
+  removeCategory(id: String!): Boolean!
+}
+
+input CategoryInput {
+  title: String!
+  description: String
+}
+
+input CategoryUpdate {
+  id: String!
+  title: String
+  description: String
+}
+
+type Subscription {
+  recipeAdded: CategoryDTO!
+}
